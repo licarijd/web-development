@@ -61,7 +61,9 @@ Identify Inefficient Queries
 
 - don't use needless joins, and only request what is necessary 
 
-- use indexes (sort data - this can make lookup faster using Binary Search, for example)
+- use indexes (sort data - this can make lookup faster using Binary Search, for example). Primary  keys 
+are indexed by default, since it's assumed that entries will be queried by the primary key. But,
+if we know we will be querying by other fields, like "date", it might make sense to index those fields.
 
 
 Creating Indexes 
